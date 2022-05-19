@@ -8,23 +8,29 @@ function Navbar() {
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <Link href="/">
-              <a className="flex items-center px-2 py-4">
+              <a className="flex items-center px-2 py-2">
                 <Image src="/images/logo.png" width={60} height={60} />
-                <span className="ml-4 text-lg font-bold text-orange-400 uppercase">
-                  alegria
+                <span className="ml-4 text-xl font-bold text-orange-400">
+                  alegría
                 </span>
               </a>
             </Link>
           </div>
-          <div>
+          <div className="hidden space-x-3 md:flex">
             <Link href="#">
-              <a>About</a>
+              <a className="px-2 py-6 text-xl font-bold text-orange-400 border-b-4 border-orange-400">
+                Story
+              </a>
             </Link>
             <Link href="#">
-              <a>Gratitude List</a>
+              <a className="px-2 py-6 text-xl font-bold text-orange-400">
+                Gratitude
+              </a>
             </Link>
             <Link href="#">
-              <a>Inspirations</a>
+              <a className="px-2 py-6 text-xl font-bold text-orange-400">
+                Inspirations
+              </a>
             </Link>
           </div>
         </div>
