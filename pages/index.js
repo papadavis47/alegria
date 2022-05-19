@@ -1,8 +1,8 @@
 const Home = () => {
   return (
     <>
-      <h1>Alegria</h1>
-      <h2>The things that make me happy</h2>
+      <h1>alegria</h1>
+      <h2>things that make me happy</h2>
     </>
   )
 }
