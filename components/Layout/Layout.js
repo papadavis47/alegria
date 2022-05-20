@@ -10,9 +10,7 @@ function Layout({ children }) {
         <link rel="icon" href="/alegria.ico" />
       </Head>
       <Navbar />
-      <main className="flex flex-col items-center flex-1 w-full px-20 text-center">
-        {children}
-      </main>
+      <main className="flex-1 w-full">{children}</main>
       <Footer />
     </div>
   )

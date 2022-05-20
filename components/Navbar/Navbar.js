@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Navbar() {
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg shadow-orange-500/40">
       <div className="px-4 mx-auto max-w-7xl">
         <div className="flex justify-between">
           <div className="flex space-x-7">
