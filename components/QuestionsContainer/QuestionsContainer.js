@@ -1,4 +1,7 @@
-function QuestionsContainer() {
+import Question from '../Question'
+import { questions } from '../../globals/data.js'
+
+function QuestionsContainer({ text }) {
   return (
     <div className="px-4 pb-8 mx-auto my-10 max-w-7xl lg:px-8">
       <div>
@@ -11,22 +14,11 @@ function QuestionsContainer() {
           reprehenderit dolore.
         </p>
       </div>
-      <div className="flex flex-col items-center lg:max-w-5xl">
-        <div className="w-full py-4 my-2 font-semibold text-center text-white rounded bg-sky-600">
-          <h2 className="sm:text-lg">What makes me happy?</h2>
-        </div>
-        <div>
-          <h2>What inspires me?</h2>
-        </div>
-        <div>
-          <h2>What am I grateful for?</h2>
-        </div>
-        <div>
-          <h2>What do I dream about?</h2>
-        </div>
-        <div>
-          <h2>Where do I want to go?</h2>
-        </div>
+      {/* Below is where I loop through questions */}
+      <div className="lg:max-w-5xl">
+        {questions.map((question) => (
+          <Question text={question.text} />
+        ))}
       </div>
       <div className="mt-3">
         <p className="mb-3 text-base font-semibold text-sky-500 sm:mx-auto sm:max-w-xl sm:text-lg md:max-w-4xl md:text-xl lg:mx-0 lg:max-w-6xl">
