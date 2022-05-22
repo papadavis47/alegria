@@ -35,6 +35,28 @@ function Navbar() {
               </Link>
             </div>
           </div>
+          <div className="self-center space-x-3 justify-self-end">
+            <Link href="/login">
+              <a>
+                <button
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 text-base font-medium text-white capitalize bg-orange-400 border border-transparent rounded-md shadow-sm hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
+                >
+                  log in
+                </button>
+              </a>
+            </Link>
+            <Link href="/signup">
+              <a>
+                <button
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 text-base font-medium text-white capitalize bg-orange-400 border border-transparent rounded-md shadow-sm hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2"
+                >
+                  sign up
+                </button>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
