@@ -17,7 +17,7 @@ function QuestionsContainer() {
       {/* Below is where I loop through questions */}
       <div className="lg:max-w-5xl">
         {questions.map((question) => (
-          <Question id={question.id} text={question.text} />
+          <Question key={question.id} text={question.text} />
         ))}
       </div>
       <div className="mt-3">
