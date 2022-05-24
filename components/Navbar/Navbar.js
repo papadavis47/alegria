@@ -33,6 +33,11 @@ function Navbar() {
                   Inspirations
                 </a>
               </Link>
+              <Link href="#">
+                <a className="px-2 py-6 text-xl font-bold text-orange-400 border-orange-400 hover:border-b-2">
+                  Actions
+                </a>
+              </Link>
             </div>
           </div>
           <div className="self-center hidden space-x-3 justify-self-end lg:flex">
