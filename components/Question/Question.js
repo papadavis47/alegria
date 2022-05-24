@@ -1,6 +1,9 @@
-function Question({ text }) {
+function Question({ text, id }) {
   return (
-    <div className="w-full py-4 my-2 font-semibold text-center text-white rounded bg-sky-600">
+    <div
+      key={id}
+      className="w-full py-4 my-2 font-semibold text-center text-white rounded bg-sky-600"
+    >
       <h2 className="sm:text-lg">{text}</h2>
     </div>
   )

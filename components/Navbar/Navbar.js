@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Navbar() {
   return (
-    <nav className="sticky top-0 bg-white shadow-lg shadow-orange-500/40">
+    <nav className="sticky top-0 shadow-lg bg-white/90 shadow-orange-500/40">
       <div className="px-4 mx-auto max-w-7xl">
         <div className="flex justify-between">
           <div className="flex space-x-7">
@@ -35,7 +35,7 @@ function Navbar() {
               </Link>
             </div>
           </div>
-          <div className="self-center space-x-3 justify-self-end">
+          <div className="self-center hidden space-x-3 justify-self-end lg:flex">
             <Link href="/login">
               <a>
                 <button

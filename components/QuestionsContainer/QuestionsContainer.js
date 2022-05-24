@@ -1,7 +1,7 @@
 import Question from '../Question'
 import { questions } from '../../globals/data.js'
 
-function QuestionsContainer({ text }) {
+function QuestionsContainer() {
   return (
     <div className="px-4 pb-8 mx-auto my-10 max-w-7xl lg:px-8">
       <div>
@@ -17,7 +17,7 @@ function QuestionsContainer({ text }) {
       {/* Below is where I loop through questions */}
       <div className="lg:max-w-5xl">
         {questions.map((question) => (
-          <Question text={question.text} />
+          <Question id={question.id} text={question.text} />
         ))}
       </div>
       <div className="mt-3">
